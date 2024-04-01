@@ -25,6 +25,7 @@
         <module>shardingsphere-2fastcode</module>
         <module>shardingsphere-default-strategy</module>
         <module>shardingsphere-autocreate-table</module>
+
     </modules>
 
     <dependencies>
@@ -42,7 +43,11 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>${mysql.connector.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
 
+        </dependency>
         <!-- 必须引入的包 ShardingSphere -->
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>

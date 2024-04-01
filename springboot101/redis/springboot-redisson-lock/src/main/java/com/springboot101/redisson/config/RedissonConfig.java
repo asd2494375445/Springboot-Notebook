@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @Description:
  */
 @Configuration
+
 public class RedissonConfig {
 
     @Bean

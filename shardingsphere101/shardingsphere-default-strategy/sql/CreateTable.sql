@@ -1,3 +1,4 @@
+
 CREATE TABLE t_city_dict (
   id BIGINT, -- 城市ID
   city_name VARCHAR(255) NOT NULL, -- 城市名称

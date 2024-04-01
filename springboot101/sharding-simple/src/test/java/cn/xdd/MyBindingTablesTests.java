@@ -1,8 +1,8 @@
-package com.shardingsphere_101;
+package cn.xdd;
 
-import com.shardingsphere_101.dao.OrderItemMapper;
-import com.shardingsphere_101.dao.OrderMapper;
-import com.shardingsphere_101.entity.Order;
+
+import cn.xdd.dao.OrderItemMapper;
+import cn.xdd.dao.OrderMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -35,7 +35,7 @@ class MyBindingTablesTests {
     @Test
     public void insertOrderAndItemsTest() {
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 2; i++) {
             Order order = new Order();
 
             long orderId = getRandomNumber(11);
@@ -43,7 +43,12 @@ class MyBindingTablesTests {
             order.setOrderNumber("WIN" + orderId);
             order.setCustomerId((long) i);
             order.setOrderDate(new Date());
+            order.setOrderId(orderId);
             order.setTotalAmount(new BigDecimal("0" + i));
+            // 初始化SnowflakeIdWorker，传入数据中心ID和机器ID
+//            SnowFlakeUtil snowFlakeUtil = new SnowFlakeUtil();
+//            long id = snowFlakeUtil.nextId();
+
             orderMapper.insert(order);
 
 //            OrderItem orderItem = new OrderItem();

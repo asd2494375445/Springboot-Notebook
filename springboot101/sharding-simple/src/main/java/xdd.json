@@ -1,0 +1,27 @@
+{
+  "actState": 2,
+  "actStateText": "报名中",
+  "address": "日福田区",
+  "areaId": 2156,
+  "areaName": "福田区",
+  "coverUrl": "http://192.168.3.25:9011/igreen/2024/04/01/DX_20240401100121A001.jpg",
+  "currentStage": 1,
+  "endTime": "2024-04-05 23:59:59",
+  "foyer": 1,
+  "id": "1774618341578649601",
+  "maxApplyEndTime": "2024-04-01 23:59:59",
+  "minApplyStartTime": "2024-04-01 00:00:00",
+  "name": "1000",
+  "stages": [
+    {
+      "actId": "1774618341578649601",
+      "endTime": 1711987199000,
+      "groupId": "1774618341792559106",
+      "id": "1774618342060994562",
+      "realitySignUpCnt": 0,
+      "signUpLimitOfStage": 1,
+      "stage": 1,
+      "startTime": 1711900800000
+    }],
+  "startTime": "2024-04-05 00:00:00"
+}

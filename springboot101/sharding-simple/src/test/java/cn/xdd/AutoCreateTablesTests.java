@@ -1,4 +1,4 @@
-package com.shardingsphere_101;
+package cn.xdd;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,0 +1,35 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://aliyun:3306/db0?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: Jiansheyin1.
+    hikari:
+      minimum-idle: 10
+      idle-timeout: 180000
+      maximum-pool-size: 100
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+#spring:
+#  datasource:
+#    # Configure HikariCP as the connection pool
+#    type: com.zaxxer.hikari.HikariDataSource
+#    hikari:
+#      # 数据库连接池配置
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://aliyun:3306/db0?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#    username: root
+#    password: Jiansheyin1.
+#    # 线程池配置（可根据需要调整）
+#    minimum-idle: 5
+#    maximum-pool-size: 10
+#    connection-timeout: 30000
+#    idle-timeout: 60000
+#    max-lifetime: 1800000
