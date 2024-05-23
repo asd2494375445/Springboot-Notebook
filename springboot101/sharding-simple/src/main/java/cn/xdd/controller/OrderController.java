@@ -4,6 +4,7 @@ package cn.xdd.controller;
 import cn.xdd.dao.OrderItemMapper;
 import cn.xdd.dao.OrderMapper;
 import cn.xdd.entity.Order;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,6 +25,10 @@ public class OrderController {
 
     @Resource
     private OrderMapper orderMapper;
+
+
+
+
 
     @Resource
     private OrderItemMapper orderItemMapper;

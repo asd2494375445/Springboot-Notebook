@@ -1,5 +1,5 @@
 server:
-  port: 8086
+  port: 8089
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
@@ -16,20 +16,22 @@ spring:
       max-lifetime: 60000
       connection-timeout: 30000
       connection-test-query: SELECT 1
+  redis:
+    host: aliyun
+    port: 6379
+    lettuce:
+      pool:
+        min-idle: 5
+        max-active: 10
+        max-wait: 1ms
+      shutdown-timeout: 100ms
+    password: Jiansheyin1.
+    database: 0
 
-#spring:
-#  datasource:
-#    # Configure HikariCP as the connection pool
-#    type: com.zaxxer.hikari.HikariDataSource
-#    hikari:
-#      # 数据库连接池配置
-#      driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://aliyun:3306/db0?serverTimezone=Asia/Shanghai&allowMultiQueries=true
-#    username: root
-#    password: Jiansheyin1.
-#    # 线程池配置（可根据需要调整）
-#    minimum-idle: 5
-#    maximum-pool-size: 10
-#    connection-timeout: 30000
-#    idle-timeout: 60000
-#    max-lifetime: 1800000
+#
+#
+#logging:
+#  level:
+#    root: info
+#    com:
+#      product: debug

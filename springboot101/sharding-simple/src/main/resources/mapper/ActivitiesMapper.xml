@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xdd.mapper.ActivitiesMapper">
+
+    <resultMap id="BaseResultMap" type="cn.xdd.entity.Activities">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="actState" column="act_state" jdbcType="TINYINT"/>
+            <result property="actStateText" column="act_state_text" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="areaId" column="area_id" jdbcType="OTHER"/>
+            <result property="areaName" column="area_name" jdbcType="VARCHAR"/>
+            <result property="coverUrl" column="cover_url" jdbcType="VARCHAR"/>
+            <result property="currentStage" column="current_stage" jdbcType="TINYINT"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="foyer" column="foyer" jdbcType="TINYINT"/>
+            <result property="maxApplyEndTime" column="max_apply_end_time" jdbcType="TIMESTAMP"/>
+            <result property="minApplyStartTime" column="min_apply_start_time" jdbcType="TIMESTAMP"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="stagesId" column="stages_id" jdbcType="BIGINT"/>
+            <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,act_state,act_state_text,
+        address,area_id,area_name,
+        cover_url,current_stage,end_time,
+        foyer,max_apply_end_time,min_apply_start_time,
+        name,stages_id,start_time
+    </sql>
+</mapper>

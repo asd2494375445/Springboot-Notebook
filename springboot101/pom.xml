@@ -60,6 +60,8 @@
         <!-- 数据库相关 -->
         <module>数据库/springboot-dynamic-datasource</module>
         <module>mongodb</module>
+
+        <module>demo1</module>
     </modules>
 
     <properties>
