@@ -1,0 +1,33 @@
+server:
+  port: 8888
+
+
+
+
+spring:
+  # 数据库连接信息
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://dxio.cn:3306/db0?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: Jiansheyin1.
+    hikari:
+      minimum-idle: 10
+      idle-timeout: 180000
+      maximum-pool-size: 20
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
+  redis:
+    host: dxio.cn # 地址
+    port: 6379 # 端口
+    database: 3 # 数据库索引
+    password: Jiansheyin1.
+
+logging:
+  level:
+    root: info
+    com.springboot101.mapper: debug

@@ -16,6 +16,8 @@
     <modules>
         <!-- springboot2.0实战 -->
         <module>springboot101</module>
+        <module>springboot-cacheable</module>
+
         <!-- shardingsphere5.x实战 -->
         <module>shardingsphere101</module>
     </modules>
